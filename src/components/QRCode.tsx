@@ -1,20 +1,11 @@
-import { useState, useEffect } from 'react';
+import QR from '../tmp/qr_code.png';
 
 export function QRCode(){
-    const [isLogged, setIsLogged] = useState()
-    
-    const handleQR = async () => {
-        const res = await fetch('http://172.16.121.182/status')
-
-    }
-    useEffect(() => {
-
-    },[isLogged])
-
+   
 
     return(
         <div>
-
+            <img src={QR} height='100px' width='100px'/>
         </div>
     )
 }
