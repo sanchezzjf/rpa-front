@@ -1,11 +1,13 @@
-import QR from '../tmp/qr_code.png';
+type Props = {
+    qr_data: string
+}
 
-export function QRCode(){
+export function QRCode(props: Props){
    
 
     return(
         <div>
-            <img src={QR} height='100px' width='100px'/>
+            <img src={props.qr_data} height='250px' width='250px'/>
         </div>
     )
 }
